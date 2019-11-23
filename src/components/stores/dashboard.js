@@ -8,7 +8,7 @@ export default class {
   }
 
   @action
-  changeToAbc() {
-    this.id = 'abc';
+  changeId(inString) {
+    this.id = inString;
   }
 }

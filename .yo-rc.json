@@ -1,0 +1,10 @@
+{
+  "generator-react-app": {
+    "prefix": "mobx-",
+    "dirs": {
+      "views": "./src/components/views",
+      "mixins": "./src/components/mixins",
+      "services": "./src/components/services"
+    }
+  }
+}

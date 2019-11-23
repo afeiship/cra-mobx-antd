@@ -6,7 +6,7 @@ import { action } from 'mobx';
 export default class extends React.Component {
   onBtnClick = (inEvent) => {
     const { dashboard } = this.props;
-    dashboard.changeToAbc();
+    dashboard.changeId('str' + Math.random() * 100);
     console.log('btn click!');
   };
 
