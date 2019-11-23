@@ -1,0 +1,55 @@
+{
+  "name": "webpack-react-mobx-spa",
+  "version": "1.0.0",
+  "description": "SPA application based on react & mobx.",
+  "homepage": "https://github.com/afeiship/webpack-react-mobx-spa",
+  "author": {
+    "name": "afeiship",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "upgrade": "./bin/upgrade.rb",
+    "clean": "rimraf dist",
+    "dll": "cross-env NODE_ENV=production webpack -p --env.type=dll",
+    "predev": "npm run clean && npm run dll",
+    "prebuild:development": "npm run clean && npm run dll",
+    "prebuild": "npm run clean && npm run dll",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build:test": "cross-env NODE_ENV=test webpack -p",
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "start": "node ./server.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/plugin-transform-spread": "^7.0.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "@feizheng/webpack-app-kits": "^3.0.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@feizheng/next-js-core2": "^2.0.2",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2"
+  }
+}
