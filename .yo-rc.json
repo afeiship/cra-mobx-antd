@@ -1,6 +1,6 @@
 {
-  "generator-react-app": {
-    "prefix": "mobx-",
+  "@feizheng/generator-react-app": {
+    "prefix": "abc-",
     "dirs": {
       "views": "./src/components/views",
       "mixins": "./src/components/mixins",
