@@ -41,6 +41,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@feizheng/next-axios": "^2.0.0",
     "@feizheng/next-js-core2": "^2.0.2",
     "@feizheng/webpack-app-kits": "github:afeiship/webpack-app-kits",
     "classnames": "^2.2.6",

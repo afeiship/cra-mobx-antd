@@ -1,6 +1,6 @@
 {
   "@feizheng/generator-react-app": {
-    "prefix": "abc-",
+    "prefix": "abc-bi-",
     "dirs": {
       "views": "./src/components/views",
       "mixins": "./src/components/mixins",
