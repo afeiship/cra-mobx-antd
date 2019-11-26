@@ -17,7 +17,8 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build:test": "cross-env NODE_ENV=test webpack -p",
     "build": "cross-env NODE_ENV=production webpack -p",
-    "start": "node ./build/server.js"
+    "start": "node ./build/server.js",
+    "storybook": "start-storybook"
   },
   "license": "MIT",
   "devDependencies": {
@@ -32,6 +33,10 @@
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.0",
+    "@storybook/addon-actions": "^5.0.1",
+    "@storybook/addon-links": "^5.0.1",
+    "@storybook/addons": "^5.0.1",
+    "@storybook/react": "^5.2.6",
     "babel-loader": "^8.0.6",
     "cross-env": "^6.0.3",
     "html-webpack-plugin": "^3.2.0",
