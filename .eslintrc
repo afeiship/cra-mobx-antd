@@ -1,0 +1,13 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-no-undef": 0,
+    "no-undef": 0
+  },
+  "globals": {
+    "window": true,
+    "esbi": true,
+    "Blank": true
+  }
+}
