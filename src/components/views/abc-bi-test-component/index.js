@@ -2,10 +2,13 @@ import React from 'react';
 import cx from 'classnames';
 import PropTypes from 'prop-types';
 import './style.scss';
+import { inject, observer } from 'mobx-react';
 
 // constants:
 const CLASS_NAME = 'abc-bi-test-component';
 
+@inject('dashboard')
+@observer
 export default class extends React.Component {
   static displayName = CLASS_NAME;
   /*===properties start===*/
