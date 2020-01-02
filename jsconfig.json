@@ -1,5 +1,17 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true
-  }
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [ "src/*" ],
+      "#/*": [ "src/components/*" ]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
