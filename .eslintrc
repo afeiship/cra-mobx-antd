@@ -9,5 +9,10 @@
     "window": true,
     "esbi": true,
     "Blank": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
   }
 }
