@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   // The Webpack config to use when compiling your react app for development or production.
@@ -10,6 +11,7 @@ module.exports = {
       '@': path.join(__dirname, 'src'),
     },
     plugins: [
+      new BundleAnalyzerPlugin({ openAnalyzer: false }),
       new webpack.ProvidePlugin({
         React: 'react',
         ReactDOM: 'react-dom',

@@ -15,7 +15,16 @@ const dllPath = 'src/assets/libs';
 module.exports = {
   mode: 'production',
   entry: {
-    vendors: ['react', 'antd', 'react-dom'],
+    vendors: [
+      'react',
+      'react-dom',
+      'mobx',
+      'mobx-react',
+      'antd',
+      'antd-form-builder',
+      'styled-components',
+      'lodash',
+    ],
   },
   output: {
     path: path.join(__dirname, dllPath),
