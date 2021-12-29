@@ -15,7 +15,7 @@ const dllPath = 'src/assets/libs';
 module.exports = {
   mode: 'production',
   entry: {
-    vendors: ['@jswork/next'],
+    vendors: ['react', 'antd', 'react-dom'],
   },
   output: {
     path: path.join(__dirname, dllPath),
