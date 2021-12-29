@@ -3,8 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@jswork/next": "^1.0.9",
+    "@jswork/rctpl-ant-radio": "^1.0.3",
+    "@jswork/rctpl-ant-select-default": "^1.0.4",
+    "@jswork/react-ant-checkbox": "^1.0.0",
+    "@jswork/react-ant-checkbox-group": "^1.0.5",
+    "@jswork/react-ant-editable-tag-group": "^1.0.5",
+    "@jswork/react-ant-input-search": "^1.0.3",
+    "@jswork/react-ant-radio-group": "^1.0.5",
+    "@jswork/react-ant-select": "^1.0.5",
+    "@jswork/react-ant-switch": "^1.0.0",
+    "@jswork/react-ant-tree": "^1.0.4",
+    "@jswork/react-ant-tree-select": "^1.0.4",
+    "@jswork/react-condition-manager": "^1.1.0",
+    "@jswork/react-empty-state": "^1.0.3",
+    "@jswork/react-if-else": "^1.1.0",
+    "@jswork/react-list": "^1.1.4",
+    "@jswork/react-status-manager": "^1.1.0",
+    "@jswork/styled-box": "^1.0.60",
+    "@jswork/styled-plugin-absolute-center": "^1.0.11",
+    "@jswork/styled-plugin-absolute-rect": "^1.0.5",
+    "@jswork/styled-plugin-flexbox": "^1.0.13",
+    "@jswork/styled-plugin-line": "^1.0.3",
+    "@jswork/styled-plugin-transform-center": "^1.0.13",
+    "@jswork/use-active-state": "^1.0.8",
+    "antd": "^4.18.0",
+    "antd-form-builder": "^2.1.4",
+    "mobx": "^6.3.10",
+    "mobx-react": "^7.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3",
+    "tslib": "^2.3.1",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
@@ -12,12 +42,6 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -32,6 +56,7 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -42,6 +67,14 @@
     "node-sass": "^7.0.1",
     "prettier": "^2.5.1",
     "react-scripts": "5.0.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "@types/react-router-config": "^5.0.3",
+    "@types/react-router-dom": "^5.1.8",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier-eslint": "^13.0.0",
+    "standard": "^14.3.4"
   }
 }

@@ -5,14 +5,14 @@ module.exports = {
   // The Webpack config to use when compiling your react app for development or production.
   webpack: {
     alias: {
-      '@': path.join(__dirname, 'src')
+      '@': path.join(__dirname, 'src'),
     },
     plugins: [
       new webpack.ProvidePlugin({
         React: 'react',
         ReactDOM: 'react-dom',
-        View: ['@jswork/styled-box', 'default']
-      })
-    ]
-  }
+        View: ['@jswork/styled-box', 'default'],
+      }),
+    ],
+  },
 };

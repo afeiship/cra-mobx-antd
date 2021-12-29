@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "legacyDecorators": true
+    }
+  },
+  "rules": {
+    "semi": 0,
+    "strict": 0,
+    "valid-jsdoc": 2,
+    "space-before-function-paren": 0,
+    "import/no-anonymous-default-export": 0,
+    "react/jsx-no-undef": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-boolean-value": 0,
+    "react/react-in-jsx-scope": 2,
+    "react/display-name": 0,
+    "react/prop-types": 0,
+    "no-unused-vars": "warn",
+    "no-console": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "@typescript-eslint/no-unused-vars": 0
+  },
+  "settings": {
+    "react": {
+      "version": "16.4.1"
+    }
+  },
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "window": true,
+    "styled": true,
+    "nx": true,
+    "React": true,
+    "View": true,
+    "APP_VARS": true
+  }
+}
