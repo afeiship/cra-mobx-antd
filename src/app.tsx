@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { HashRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 
-const CatList = React.lazy(() => import('./modules/cat-list'));
-const AddCat = React.lazy(() => import('./modules/add-cat'));
+const CatList = React.lazy(() => import('@/modules/cat-list'));
+const AddCat = React.lazy(() => import('@/modules/add-cat'));
 
 const App = () => {
   const [cats, setCats] = useState<any[]>([]);
