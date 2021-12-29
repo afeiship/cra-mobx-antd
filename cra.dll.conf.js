@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const dllPath = '../.tmp/libs';
+const dllPath = 'src/assets/libs';
 
 module.exports = {
   mode: 'production',

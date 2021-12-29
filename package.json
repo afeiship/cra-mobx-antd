@@ -38,7 +38,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "dll": "webpack --progress --config ./config/webpack.dll.conf.js",
+    "dll": "webpack --progress --config cra.dll.conf.js",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test"

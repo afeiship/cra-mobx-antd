@@ -19,12 +19,12 @@ module.exports = {
         template: 'public/index.html',
       }),
       new webpack.DllReferencePlugin({
-        manifest: require('./.tmp/libs/vendors-manifest.json'),
+        manifest: require('./src/assets/libs/vendors-manifest.json'),
       }),
       // 将 dll 注入到 生成的 html 模板中
       new AddAssetHtmlPlugin({
         // dll文件位置
-        filepath: path.resolve(__dirname, '.tmp/libs/*.js'),
+        filepath: path.resolve(__dirname, './src/assets/libs/*.js'),
         // dll 引用路径
         publicPath: './static/libs',
         // dll最终输出的目录
