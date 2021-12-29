@@ -11,7 +11,7 @@ module.exports = {
       '@': path.join(__dirname, 'src'),
     },
     plugins: [
-      new BundleAnalyzerPlugin({ openAnalyzer: false }),
+      // new BundleAnalyzerPlugin({ openAnalyzer: false }),
       new webpack.ProvidePlugin({
         React: 'react',
         ReactDOM: 'react-dom',

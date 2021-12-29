@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom';
 import '@/shared/nx';
 import '@/assets/styles/index.scss';
 import reportWebVitals from './reportWebVitals';
+import App from './app';
 
-const App = () => {
-  console.log('app ready.');
-  return (
-    <View debug p={10} bg="#eee" plugin="transform-center:xy">
-      Hello React <View as="strong">{nx.$root.hello}</View> <br />
-      Hello Nx {nx.VERSION}
-    </View>
-  );
-};
+// const App = () => {
+//   console.log('app ready.');
+//   return (
+//     <View debug p={10} bg="#eee" plugin="transform-center:xy">
+//       Hello React <View as="strong">{nx.$root.hello}</View> <br />
+//       Hello Nx {nx.VERSION}
+//     </View>
+//   );
+// };
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
