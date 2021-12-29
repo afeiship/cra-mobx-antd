@@ -37,24 +37,12 @@
     "tslib": "^2.3.1",
     "web-vitals": "^2.1.2"
   },
-"scripts": {
-  "cra:dll": "webpack --progress --config cra.dll.conf.js",
-  "cra:analyze": "source-map-explorer 'build/static/js/*.js'",
-  "start": "craco start",
-  "build": "craco build",
-  "test": "craco test"
-},
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "scripts": {
+    "cra:dll": "webpack --progress --config cra.dll.conf.js",
+    "cra:analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test"
   },
   "devDependencies": {
     "@craco/craco": "^6.4.3",
