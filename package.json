@@ -1,62 +1,46 @@
 {
-  "name": "webpack-react-mobx-spa",
-  "version": "1.0.0",
-  "description": "SPA application based on react & mobx.",
-  "homepage": "https://github.com/afeiship/webpack-react-mobx-spa",
-  "author": {
-    "name": "afeiship",
-    "email": "1290657123@qq.com"
+  "name": "cra-mobx-antd",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.17",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.5.4",
+    "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "upgrade": "./bin/upgrade.rb",
-    "clean": "rimraf dist",
-    "dll": "cross-env NODE_ENV=production webpack -p --env.type=dll",
-    "predev": "npm run clean && npm run dll",
-    "prebuild:development": "npm run clean && npm run dll",
-    "prebuild": "npm run clean && npm run dll",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server",
-    "build:test": "cross-env NODE_ENV=test webpack -p",
-    "build": "cross-env NODE_ENV=production webpack -p",
-    "start": "node ./build/server.js",
-    "storybook": "start-storybook"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "license": "MIT",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-decorators": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.0.0",
-    "@babel/plugin-transform-spread": "^7.0.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.4.0",
-    "@storybook/addon-actions": "^5.0.1",
-    "@storybook/addon-links": "^5.0.1",
-    "@storybook/addons": "^5.0.1",
-    "@storybook/react": "^5.2.6",
-    "babel-loader": "^8.0.6",
-    "cross-env": "^6.0.3",
-    "html-webpack-plugin": "^3.2.0",
-    "storybook-react-router": "^1.0.8",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
-  },
-  "dependencies": {
-    "@feizheng/next-axios": "^2.0.0",
-    "@feizheng/next-js-core2": "^2.0.2",
-    "@feizheng/webpack-app-kits": "github:afeiship/webpack-app-kits",
-    "classnames": "^2.2.6",
-    "lodash": "^4.17.15",
-    "mobx": "^5.15.0",
-    "mobx-react": "^6.1.4",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2"
+    "node-sass": "^7.0.1"
   }
 }
