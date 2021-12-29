@@ -3,10 +3,19 @@ const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const dllPath = 'src/assets/libs';
 
+/**
+ * https://webpack.docschina.org/plugins/dll-plugin/
+ * https://brunolm.wordpress.com/2017/03/24/webpack-dllplugin-and-dllreferenceplugin/
+ * https://github.com/webpack/webpack/issues/8078
+ * https://blog.csdn.net/weixin_44420276/article/details/103132832
+ * https://blog.csdn.net/weixin_39773218/article/details/97494099
+ * https://www.jianshu.com/p/a5b3c2284bb6
+ */
+
 module.exports = {
   mode: 'production',
   entry: {
-    vendors: ['react', 'antd', 'react-dom'],
+    vendors: ['@jswork/next'],
   },
   output: {
     path: path.join(__dirname, dllPath),
