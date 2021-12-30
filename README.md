@@ -18,3 +18,4 @@
 - [ ] modal-manager
 - [ ] lazy(chunkName)
 - [ ] sourcemap(prod: create but renamed; s3 rename script)
+- [ ] generator-cli
