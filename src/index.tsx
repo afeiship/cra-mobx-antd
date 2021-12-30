@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import '@/shared/nx';
 import '@/assets/styles/index.scss';
