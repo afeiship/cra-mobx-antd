@@ -2,11 +2,26 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
+const Mini = require('mini-css-extract-plugin');
+const one2extra = require('@jswork/one2extra').default;
+
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
+const smp = new SpeedMeasurePlugin();
 
 module.exports = {
   // The Webpack config to use when compiling your react app for development or production.
   webpack: {
+    configure: (webpackConfig) => {
+      const [minPlugin, otherPlugins] = one2extra(
+        (items) => items.findIndex((item) => item instanceof Mini),
+        webpackConfig.plugins
+      );
+      webpackConfig.plugins = otherPlugins;
+      webpackConfig = smp.wrap(webpackConfig);
+      webpackConfig.plugins.push(minPlugin);
+      return webpackConfig;
+    },
     alias: {
       '@': path.join(__dirname, 'src'),
     },
