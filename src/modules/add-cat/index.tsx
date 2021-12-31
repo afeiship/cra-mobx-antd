@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 
 export const convertToSlug = (text) => {
   return text
@@ -6,6 +7,10 @@ export const convertToSlug = (text) => {
     .replace(/ /g, '-')
     .replace(/[^\w-]+/g, '');
 };
+
+const AddCateContainer = styled.div`
+  border: 1px solid red;
+`;
 
 function generateCat() {
   const catPhotos = ['cat-1.jpg', 'cat-2.jpg', 'cat-3.jpg', 'cat-4.jpg'];
@@ -17,7 +22,7 @@ const AddCat = (props) => {
   const [catName, setCatName] = useState('');
 
   return (
-    <React.Fragment>
+    <AddCateContainer>
       <div className="form-group">
         <label>Cat name</label>
         <input
@@ -40,7 +45,7 @@ const AddCat = (props) => {
         }>
         Submit
       </button>
-    </React.Fragment>
+    </AddCateContainer>
   );
 };
 
