@@ -48,6 +48,11 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.4.3",
+    "@jswork/craco-plugin-banner": "^1.0.4",
+    "@jswork/craco-plugin-bundle-analyzer": "^1.0.2",
+    "@jswork/craco-plugin-dll-refs": "^1.0.2",
+    "@jswork/craco-plugin-spa-base": "^1.0.5",
+    "@jswork/craco-plugin-speed-measure": "^1.0.2",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",

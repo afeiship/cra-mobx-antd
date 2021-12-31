@@ -2,7 +2,7 @@ name: webpack-dll-config
 config:
   path: src/assets/libs
   entry:
-    venders:
+    vendors:
       - react
       - react-dom
       - mobx
