@@ -9,7 +9,7 @@ const smp = new SpeedMeasurePlugin();
 module.exports = {
   // The Webpack config to use when compiling your react app for development or production.
   webpack: {
-    configure: (webpackConfig) => smp.wrap(webpackConfig),
+    configure: (webpackConfig) => /*smp.wrap*/ webpackConfig,
     alias: {
       '@': path.join(__dirname, 'src'),
     },
