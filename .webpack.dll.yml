@@ -1,0 +1,13 @@
+name: webpack-dll-config
+config:
+  path: src/assets/libs
+  entry:
+    venders:
+      - react
+      - react-dom
+      - mobx
+      - mobx-react
+      - antd
+      - antd-form-builder
+      - styled-components
+      - lodash

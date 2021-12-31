@@ -40,7 +40,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "cra:dll": "webpack --progress --config cra.dll.conf.js",
+    "cra:dll": "wpkdc",
     "cra:analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "craco start",
     "build": "craco build",

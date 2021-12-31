@@ -1,15 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
-const smp = new SpeedMeasurePlugin();
 
 module.exports = {
   // The Webpack config to use when compiling your react app for development or production.
   webpack: {
-    configure: (webpackConfig) => /*smp.wrap*/ webpackConfig,
     alias: {
       '@': path.join(__dirname, 'src'),
     },
@@ -19,9 +14,6 @@ module.exports = {
         React: 'react',
         ReactDOM: 'react-dom',
         View: ['@jswork/styled-box', 'default'],
-      }),
-      new HtmlWebpackPlugin({
-        template: 'public/index.html',
       }),
       new webpack.DllReferencePlugin({
         manifest: require('./src/assets/libs/vendors-manifest.json'),
