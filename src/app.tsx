@@ -8,7 +8,7 @@ const App = () => {
   const [cats, setCats] = useState<any[]>([]);
 
   return (
-    <div className="container p-5">
+    <div className="container p-5 tw-text-center">
       <div className="row justify-content-sm-center">
         <div className="col-sm-5">
           <React.Suspense fallback={<span>Loading...</span>}>

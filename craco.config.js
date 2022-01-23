@@ -16,4 +16,9 @@ module.exports = {
     { plugin: dllRefs },
     { plugin: styled },
   ],
+  style: {
+    postcss: {
+      plugins: [require('tailwindcss'), require('autoprefixer')],
+    },
+  },
 };
