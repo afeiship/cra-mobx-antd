@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom';
 import '@/shared/nx';
 import '@/assets/styles/index.scss';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './app';
 
