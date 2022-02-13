@@ -1,4 +1,5 @@
-import './next-packages';
+import './packages';
+import './styled';
 import ReactIfElse from '@jswork/react-if-else';
 import RCM from '@jswork/react-condition-manager';
 import RSM from '@jswork/react-status-manager';
@@ -17,7 +18,6 @@ import RctplAntSelectDefault from '@jswork/rctpl-ant-select-default';
 import RctplAntRadio from '@jswork/rctpl-ant-radio';
 import ReactEmptyState from '@jswork/react-empty-state';
 import useActiveState from '@jswork/use-active-state';
-import './styled-box';
 import { RootStore } from '@/shared/stores/root';
 
 Object.assign(ReactAntSelect.defaultProps, { template: RctplAntSelectDefault });
