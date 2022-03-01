@@ -1,6 +1,11 @@
 # cra-mobx-antd
 > SPA application based on react & mobx.
 
+## installation
+```shell
+npm i --legacy-peer-deps
+```
+
 ## features
 - [x] `<View />` for `StyledBox`
 - [x] `nx.$root` for `Mobx`
