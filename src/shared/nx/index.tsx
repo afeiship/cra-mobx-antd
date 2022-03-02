@@ -18,34 +18,36 @@ import RctplAntSelectDefault from '@jswork/rctpl-ant-select-default';
 import RctplAntRadio from '@jswork/rctpl-ant-radio';
 import ReactEmptyState from '@jswork/react-empty-state';
 import useActiveState from '@jswork/use-active-state';
-import { RootStore } from '@/shared/stores/root';
+import {RootStore} from '@/shared/stores/root';
+import $api from '@/shared/services/api';
 
-Object.assign(ReactAntSelect.defaultProps, { template: RctplAntSelectDefault });
-Object.assign(ReactAntRadioGroup.defaultProps, { template: RctplAntRadio });
+Object.assign(ReactAntSelect.defaultProps, {template: RctplAntSelectDefault});
+Object.assign(ReactAntRadioGroup.defaultProps, {template: RctplAntRadio});
 
 // inject react layout services:
 nx.$rc = {
-  rcm: RCM,
-  rsm: RSM,
-  ife: ReactIfElse,
-  list: ReactList,
+    rcm: RCM,
+    rsm: RSM,
+    ife: ReactIfElse,
+    list: ReactList,
 
-  // form control
-  select: ReactAntSelect,
-  tagGroup: ReactAntEditableTagGroup,
-  radioGroup: ReactAntRadioGroup,
-  inputSearch: ReactAntInputSearch,
-  checkbox: ReactAntCheckbox,
-  checkboxGroup: ReactAntCheckboxGroup,
-  tree: ReactAntTree,
-  switch: ReactAntSwitch,
-  treeSelect: ReactAntTreeSelect,
-  empty: ReactEmptyState,
-  fb: AntdFormBuilder,
+    // form control
+    select: ReactAntSelect,
+    tagGroup: ReactAntEditableTagGroup,
+    radioGroup: ReactAntRadioGroup,
+    inputSearch: ReactAntInputSearch,
+    checkbox: ReactAntCheckbox,
+    checkboxGroup: ReactAntCheckboxGroup,
+    tree: ReactAntTree,
+    switch: ReactAntSwitch,
+    treeSelect: ReactAntTreeSelect,
+    empty: ReactEmptyState,
+    fb: AntdFormBuilder,
 };
 
 nx.$hooks = {
-  useActiveState,
+    useActiveState,
 };
 
 nx.$root = new RootStore();
+nx.$api = $api;
