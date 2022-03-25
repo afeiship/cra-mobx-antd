@@ -50,6 +50,7 @@
     "window": true,
     "styled": true,
     "nx": true,
+    "cx": true,
     "React": true,
     "View": true,
     "APP_VARS": true
