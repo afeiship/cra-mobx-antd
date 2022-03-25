@@ -1,0 +1,17 @@
+{
+  "@jswork/generator-react-app": {
+    "component": {
+      "prefix": "",
+      "components_dir": "src/shared/components",
+      "component_type": "functional",
+      "export_type": "const",
+      "file_type": "tsx"
+    },
+    "hook": {
+      "prefix": "use-",
+      "components_dir": "src/shared/hooks",
+      "export_type": "const",
+      "file_type": "tsx"
+    }
+  }
+}
