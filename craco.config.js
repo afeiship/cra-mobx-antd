@@ -5,6 +5,7 @@ const banner = require('@jswork/craco-plugin-banner');
 const analyzer = require('@jswork/craco-plugin-bundle-analyzer');
 const styled = require('@jswork/craco-plugin-styled-components');
 const debug = require('@jswork/craco-plugin-debug');
+const styledExt = require('@jswork/craco-plugin-styled-extension');
 
 // 特别提醒: spm 使用的时候，会导致 %PUBLIC_URL%，无法编译。 DllRefs 组件失效等问题。
 
@@ -16,6 +17,7 @@ module.exports = {
     { plugin: analyzer },
     { plugin: dllRefs },
     { plugin: styled },
+    { plugin: styledExt },
     // { plugin: debug },
   ],
 };

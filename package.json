@@ -50,7 +50,7 @@
     "cra:dll": "wpkdc",
     "cra:analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "craco start",
-    "build": "env-cmd -f ./.env.production craco build",
+    "build": "craco build",
     "test": "craco test"
   },
   "devDependencies": {
@@ -58,10 +58,11 @@
     "@jswork/craco-plugin-banner": "^1.0.4",
     "@jswork/craco-plugin-bundle-analyzer": "^1.0.3",
     "@jswork/craco-plugin-debug": "^1.0.4",
-    "@jswork/craco-plugin-dll-refs": "^1.0.5",
+    "@jswork/craco-plugin-dll-refs": "^1.0.6",
     "@jswork/craco-plugin-spa-base": "^1.0.5",
     "@jswork/craco-plugin-speed-measure": "^1.0.2",
     "@jswork/craco-plugin-styled-components": "^1.0.1",
+    "@jswork/craco-plugin-styled-extension": "^1.0.3",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",

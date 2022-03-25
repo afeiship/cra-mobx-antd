@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CatList = (props) => (
   <React.Fragment>
-    <h1>Cat2 list</h1>
+    <h1>Cat123 list</h1>
     <input type="text" />
     <ul className="list-group">
       {Array.isArray(props.cats) &&
