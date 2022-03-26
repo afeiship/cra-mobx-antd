@@ -1,3 +1,5 @@
-@tailwind base;
+
+/* @tailwind base; */
+@import "./var.css";
 @tailwind components;
 @tailwind utilities;

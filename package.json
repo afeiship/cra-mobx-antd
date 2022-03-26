@@ -51,7 +51,7 @@
   "scripts": {
     "cra:dll": "wpkdc",
     "cra:analyze": "source-map-explorer 'build/static/js/*.js'",
-    "tailwind:watch": "tailwindcss -i ./src/assets/styles/tailwind/src.css -o ./src/assets/styles/tailwind/dst.css --watch",
+    "tailwind": "tailwindcss -i ./src/assets/styles/tailwind/src.css -o ./src/assets/styles/tailwind/dst.css --watch",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test"
