@@ -25,5 +25,9 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@jswork/tailwind-base'),
+    require('@jswork/tailwind-lc'),
+    require('@jswork/tailwind-width'),
+  ],
 };
