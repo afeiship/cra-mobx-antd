@@ -89,7 +89,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
     "prettier-eslint": "^13.0.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "sass": "^1.45.2",
     "source-map-explorer": "^2.5.2",
     "speed-measure-webpack-plugin": "^1.5.0",
